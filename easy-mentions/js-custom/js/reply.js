@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){jQuery(".reply_link").click(function(){var a=jQuery("#post_content").val();if(a!="")a+="\n\n";var b=jQuery(this).parent().siblings(".author");jQuery("#post_content").val(a+'<em>@<a href="'+b.children("a:last").get(0)+'">'+b.children(".by").text()+"</a></em>\n\n").focus()})});
